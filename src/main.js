@@ -36,7 +36,7 @@ function onSubmit(event) {
       lightbox.refresh();
     })
     .catch(error => {
-      console.log(error);
+      console.error(`Error`, error);
     })
     .finally(() => {
       hideLoader();
