@@ -36,10 +36,7 @@ function onSubmit(event) {
       lightbox.refresh();
     })
     .catch(error => {
-      iziToast.warning({
-        title: 'Error',
-        message: 'An error occurred,try again later',
-      });
+      console.error(`Error`, error);
     })
     .finally(() => {
       hideLoader();
